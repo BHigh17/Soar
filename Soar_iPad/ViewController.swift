@@ -7,13 +7,71 @@
 //
 
 import UIKit
+import SafariServices
+import Firebase
 
 class ViewController: UIViewController {
+    @IBOutlet var username: UITextField!
+    @IBOutlet var password: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+            }
+
+
+   
+
+    @IBAction func login(sender: AnyObject) {
+        /*
+        if username.text == "" || password.text == "" {
+         
+            displayAlert.("Login Error", message: "Please enter your username and password")
+        }
+         
+        
+        }
+ */
+
+        
+
+        
+        FIRAuth.auth()?.signInWithEmail(username.text!, password: password.text!, completion: {
+            
+            user, error in
+            
+            if error != nil {
+                
+                //Incorrect add alert view
+                print("WRONG")
+            
+            } else {
+            //User logged in 
+            print("User Logged in")
+            }
+            
+    
+        
+            })
+        
+        
+        
+        
+        
+        
     }
+
+
+    @IBAction func forgotButton(sender: AnyObject) {
+        
+        let svc = SFSafariViewController(URL: NSURL(string: "https://pvihs.myschoolapp.com/app#login/request")!)
+        self.presentViewController(svc, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
