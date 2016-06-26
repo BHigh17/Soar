@@ -11,13 +11,21 @@ import SafariServices
 import Firebase
 
 class ViewController: UIViewController {
+    
+    var signupActive = true
+    
     @IBOutlet var username: UITextField!
     @IBOutlet var password: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            }
+    
+    
+    
+    
+    
+    }
 
 
    
@@ -43,11 +51,14 @@ class ViewController: UIViewController {
             if error != nil {
                 
                 //Incorrect add alert view
-                print("WRONG")
+                print("incorrect login")
             
             } else {
-            //User logged in 
-            print("User Logged in")
+            
+                //User logged in
+            
+                print("user Logged in")
+            
             }
             
     
