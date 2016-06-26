@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Soar_iPad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LoginVC" id="BYZ-38-t0r" customClass="ViewController" customModule="Soar_iPad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,13 +17,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="ADi-Xe-Ry6">
+                                <rect key="frame" x="0.0" y="0.0" width="1025" height="768"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1025" id="UP1-pf-9Za"/>
+                                    <constraint firstAttribute="height" constant="768" id="m2V-1x-kRI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Th0-9k-kGi">
+                                <rect key="frame" x="328" y="28" width="369" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="437-BV-A9g"/>
+                                    <constraint firstAttribute="width" constant="369" id="w9C-QQ-y8P"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soA-aa-gex">
+                                <rect key="frame" x="337" y="225" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pfc-vB-WI4"/>
+                                    <constraint firstAttribute="width" constant="351" id="bhe-i1-Mop"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc1-9I-Xyi">
+                                <rect key="frame" x="276" y="308" width="472" height="136"/>
+                                <state key="normal" image="Log In"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crq-Ib-N1z">
+                                <rect key="frame" x="375" y="452" width="275" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="XIQ-lN-z9d"/>
+                                    <constraint firstAttribute="height" constant="30" id="cuW-Yr-wRi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Forgot Username or Password?">
+                                    <color key="titleColor" red="0.62745098039215685" green="0.65490196078431373" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ibb-aJ-0HP">
+                                <rect key="frame" x="337" y="263" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Egl-t5-aXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Th0-9k-kGi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="308" id="1fc-7d-ch5"/>
+                            <constraint firstItem="ADi-Xe-Ry6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="74g-Xp-VgQ"/>
+                            <constraint firstItem="Th0-9k-kGi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="K2v-Mg-TpS"/>
+                            <constraint firstItem="ADi-Xe-Ry6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="LJb-9a-cVN"/>
+                            <constraint firstItem="soA-aa-gex" firstAttribute="top" secondItem="Th0-9k-kGi" secondAttribute="bottom" constant="17" id="LoD-u2-N1e"/>
+                            <constraint firstItem="Ibb-aJ-0HP" firstAttribute="top" secondItem="soA-aa-gex" secondAttribute="bottom" constant="8" symbolic="YES" id="TND-7M-Xmg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Th0-9k-kGi" secondAttribute="trailing" constant="307" id="UGL-Xy-eVh"/>
+                            <constraint firstItem="soA-aa-gex" firstAttribute="trailing" secondItem="Ibb-aJ-0HP" secondAttribute="trailing" id="Vku-4S-eHp"/>
+                            <constraint firstItem="crq-Ib-N1z" firstAttribute="centerX" secondItem="cc1-9I-Xyi" secondAttribute="centerX" id="WCh-ne-dCT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ADi-Xe-Ry6" secondAttribute="trailing" constant="-21" id="doX-BA-5ZQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ADi-Xe-Ry6" secondAttribute="bottom" id="go8-95-dqo"/>
+                            <constraint firstItem="crq-Ib-N1z" firstAttribute="top" secondItem="cc1-9I-Xyi" secondAttribute="bottom" constant="8" symbolic="YES" id="o2C-qX-rqY"/>
+                            <constraint firstItem="soA-aa-gex" firstAttribute="leading" secondItem="Ibb-aJ-0HP" secondAttribute="leading" id="pHP-oS-Fu8"/>
+                            <constraint firstItem="crq-Ib-N1z" firstAttribute="centerX" secondItem="Ibb-aJ-0HP" secondAttribute="centerX" id="s7n-je-wsY"/>
+                            <constraint firstItem="cc1-9I-Xyi" firstAttribute="top" secondItem="Ibb-aJ-0HP" secondAttribute="bottom" constant="15" id="tNu-Qm-qAT"/>
+                            <constraint firstItem="soA-aa-gex" firstAttribute="centerX" secondItem="Th0-9k-kGi" secondAttribute="centerX" id="uxZ-ci-CGS"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="565" y="479"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BG" width="1024" height="768"/>
+        <image name="Log In" width="472" height="136"/>
+        <image name="Logo" width="369" height="180"/>
+    </resources>
 </document>
