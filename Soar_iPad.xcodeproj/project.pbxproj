@@ -12,6 +12,7 @@
 		EA99AECB1D1FADB500417DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99AEC91D1FADB500417DDA /* Main.storyboard */; };
 		EA99AECD1D1FADB500417DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA99AECC1D1FADB500417DDA /* Assets.xcassets */; };
 		EA99AED01D1FADB500417DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99AECE1D1FADB500417DDA /* LaunchScreen.storyboard */; };
+		EA99AED81D1FAF0800417DDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA99AED71D1FAF0800417DDA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EA99AECC1D1FADB500417DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA99AECF1D1FADB500417DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA99AED11D1FADB500417DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA99AED71D1FAF0800417DDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				EA99AECC1D1FADB500417DDA /* Assets.xcassets */,
 				EA99AECE1D1FADB500417DDA /* LaunchScreen.storyboard */,
 				EA99AED11D1FADB500417DDA /* Info.plist */,
+				EA99AED71D1FAF0800417DDA /* GoogleService-Info.plist */,
 			);
 			path = Soar_iPad;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 				EA99AED01D1FADB500417DDA /* LaunchScreen.storyboard in Resources */,
 				EA99AECD1D1FADB500417DDA /* Assets.xcassets in Resources */,
 				EA99AECB1D1FADB500417DDA /* Main.storyboard in Resources */,
+				EA99AED81D1FAF0800417DDA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +258,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BrandonHightower.Soar-iPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -265,6 +270,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BrandonHightower.Soar-iPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
