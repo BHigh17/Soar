@@ -8,5 +8,6 @@ target 'Soar_iPad' do
   # Pods for Soar_iPad
 pod ‘Firebase’
 pod 'Firebase/Auth'
+#pod 'pop', '~> 1.0'
 
 end

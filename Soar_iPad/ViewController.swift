@@ -10,6 +10,7 @@ import UIKit
 import SafariServices
 import Firebase
 
+
 class ViewController: UIViewController {
     
     var signupActive = true
@@ -20,7 +21,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
     
     
     
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             
                 //User logged in
             
-                print("user Logged in")
+                print("user lsogged in")
             
             }
             
