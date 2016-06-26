@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		755162571684E7EA220949A0 /* Pods_Soar_iPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45541FAC65E96D35EB08CDC3 /* Pods_Soar_iPad.framework */; };
 		EA99AEC61D1FADB500417DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99AEC51D1FADB500417DDA /* AppDelegate.swift */; };
 		EA99AEC81D1FADB500417DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99AEC71D1FADB500417DDA /* ViewController.swift */; };
 		EA99AECB1D1FADB500417DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99AEC91D1FADB500417DDA /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45541FAC65E96D35EB08CDC3 /* Pods_Soar_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soar_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DD838176ABF525C499BD91 /* Pods-Soar_iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soar_iPad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soar_iPad/Pods-Soar_iPad.release.xcconfig"; sourceTree = "<group>"; };
+		BF79854963B91C7ACDDEE232 /* Pods-Soar_iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soar_iPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Soar_iPad/Pods-Soar_iPad.debug.xcconfig"; sourceTree = "<group>"; };
 		EA99AEC21D1FADB500417DDA /* Soar_iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soar_iPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA99AEC51D1FADB500417DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA99AEC71D1FADB500417DDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755162571684E7EA220949A0 /* Pods_Soar_iPad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2216189346E1FF423A87B221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF79854963B91C7ACDDEE232 /* Pods-Soar_iPad.debug.xcconfig */,
+				69DD838176ABF525C499BD91 /* Pods-Soar_iPad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6909BA9D8C5686667CD0F9F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45541FAC65E96D35EB08CDC3 /* Pods_Soar_iPad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA99AEB91D1FADB500417DDA = {
 			isa = PBXGroup;
 			children = (
 				EA99AEC41D1FADB500417DDA /* Soar_iPad */,
 				EA99AEC31D1FADB500417DDA /* Products */,
+				2216189346E1FF423A87B221 /* Pods */,
+				6909BA9D8C5686667CD0F9F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA99AED41D1FADB500417DDA /* Build configuration list for PBXNativeTarget "Soar_iPad" */;
 			buildPhases = (
+				D2A61165FFFFB5010E72AF24 /* [CP] Check Pods Manifest.lock */,
 				EA99AEBE1D1FADB500417DDA /* Sources */,
 				EA99AEBF1D1FADB500417DDA /* Frameworks */,
 				EA99AEC01D1FADB500417DDA /* Resources */,
+				1A3D8E3A61FF7693B0B47435 /* [CP] Embed Pods Frameworks */,
+				89E36A718C3F1ED63FEBA0BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A3D8E3A61FF7693B0B47435 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soar_iPad/Pods-Soar_iPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E36A718C3F1ED63FEBA0BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soar_iPad/Pods-Soar_iPad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2A61165FFFFB5010E72AF24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA99AEBE1D1FADB500417DDA /* Sources */ = {
@@ -252,6 +327,7 @@
 		};
 		EA99AED51D1FADB500417DDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF79854963B91C7ACDDEE232 /* Pods-Soar_iPad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Soar_iPad/Info.plist;
@@ -264,6 +340,7 @@
 		};
 		EA99AED61D1FADB500417DDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DD838176ABF525C499BD91 /* Pods-Soar_iPad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Soar_iPad/Info.plist;
@@ -293,6 +370,7 @@
 				EA99AED61D1FADB500417DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
