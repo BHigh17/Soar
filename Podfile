@@ -8,6 +8,7 @@ target 'Soar_iPad' do
   # Pods for Soar_iPad
 pod ‘Firebase’
 pod 'Firebase/Auth'
-#pod 'pop', '~> 1.0'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
+#pod 'pop', :git => 'https://github.com/facebook/pop.git'
 
 end

@@ -25,10 +25,22 @@ PODS:
   - GoogleSymbolUtilities (1.1.1)
   - GoogleUtilities (1.3.1):
     - GoogleSymbolUtilities (~> 1.0)
+  - Spring (1.0.3)
 
 DEPENDENCIES:
   - Firebase
   - Firebase/Auth
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift2
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 18d5c7b74489de8044e34767f856d1e574f0820e
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   Firebase: 6c80ac28d59d06bfd9152a7b6ea17625ca93183d
@@ -39,7 +51,8 @@ SPEC CHECKSUMS:
   GoogleNetworkingUtilities: 3e83269048cfb498dc7ec83ab36813360965c74f
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
-PODFILE CHECKSUM: 7c6f20eb51e6ec93a75003939dfb9d4b4aae4775
+PODFILE CHECKSUM: 1b85e995811547f107e016b0c53c5169cb724f3f
 
 COCOAPODS: 1.0.1

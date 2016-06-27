@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		755162571684E7EA220949A0 /* Pods_Soar_iPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45541FAC65E96D35EB08CDC3 /* Pods_Soar_iPad.framework */; };
 		EA99AEC61D1FADB500417DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99AEC51D1FADB500417DDA /* AppDelegate.swift */; };
-		EA99AEC81D1FADB500417DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99AEC71D1FADB500417DDA /* ViewController.swift */; };
+		EA99AEC81D1FADB500417DDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99AEC71D1FADB500417DDA /* LoginViewController.swift */; };
 		EA99AECB1D1FADB500417DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99AEC91D1FADB500417DDA /* Main.storyboard */; };
 		EA99AECD1D1FADB500417DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA99AECC1D1FADB500417DDA /* Assets.xcassets */; };
 		EA99AED01D1FADB500417DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99AECE1D1FADB500417DDA /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		EA7C0C6A1D206C8D00114E33 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../Library/Developer/Xcode/DerivedData/Soar_iPad-flxesullfaqzqzeklxphihmvwbtk/Build/Products/Debug-iphoneos/pop/pop.framework"; sourceTree = "<group>"; };
 		EA99AEC21D1FADB500417DDA /* Soar_iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soar_iPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA99AEC51D1FADB500417DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA99AEC71D1FADB500417DDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA99AEC71D1FADB500417DDA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA99AECA1D1FADB500417DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA99AECC1D1FADB500417DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA99AECF1D1FADB500417DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				EA99AEC51D1FADB500417DDA /* AppDelegate.swift */,
-				EA99AEC71D1FADB500417DDA /* ViewController.swift */,
+				EA99AEC71D1FADB500417DDA /* LoginViewController.swift */,
 				EA99AEC91D1FADB500417DDA /* Main.storyboard */,
 				EA99AECC1D1FADB500417DDA /* Assets.xcassets */,
 				EA99AECE1D1FADB500417DDA /* LaunchScreen.storyboard */,
@@ -217,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA99AEC81D1FADB500417DDA /* ViewController.swift in Sources */,
+				EA99AEC81D1FADB500417DDA /* LoginViewController.swift in Sources */,
 				EA99AEC61D1FADB500417DDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +285,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/brandonhightower/Desktop/Project \"Eagle\"/Soar_iPad/Soar_iPad/Bridging Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -324,7 +324,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/brandonhightower/Desktop/Project \"Eagle\"/Soar_iPad/Soar_iPad/Bridging Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -339,6 +339,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BrandonHightower.Soar-iPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -353,6 +354,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BrandonHightower.Soar-iPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

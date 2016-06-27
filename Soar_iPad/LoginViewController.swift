@@ -13,7 +13,6 @@ import Firebase
 
 class ViewController: UIViewController {
     
-    var signupActive = true
     
     @IBOutlet var username: UITextField!
     @IBOutlet var password: UITextField!
@@ -43,7 +42,7 @@ class ViewController: UIViewController {
 
         
 
-        
+        //Test login code (whipplehill code here)
         FIRAuth.auth()?.signInWithEmail(username.text!, password: password.text!, completion: {
             
             user, error in
@@ -57,7 +56,7 @@ class ViewController: UIViewController {
             
                 //User logged in
             
-                print("user lsogged in")
+                print("user logged in")
             
             }
             

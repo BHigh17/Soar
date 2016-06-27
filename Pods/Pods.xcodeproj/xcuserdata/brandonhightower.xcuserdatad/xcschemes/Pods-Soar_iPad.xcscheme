@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FBDDB70DE3DADBFE7CC498A888146CD8"
+               BlueprintIdentifier = "E4FF689EB6607BA8A35A02BAC1C747D0"
                BuildableName = "Pods_Soar_iPad.framework"
                BlueprintName = "Pods-Soar_iPad"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FBDDB70DE3DADBFE7CC498A888146CD8"
+            BlueprintIdentifier = "E4FF689EB6607BA8A35A02BAC1C747D0"
             BuildableName = "Pods_Soar_iPad.framework"
             BlueprintName = "Pods-Soar_iPad"
             ReferencedContainer = "container:Pods.xcodeproj">

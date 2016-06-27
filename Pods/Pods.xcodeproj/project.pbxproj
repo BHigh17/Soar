@@ -7,70 +7,180 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3280C0D5D5BFADFEA78EBBF3FC45CA60 /* Pods-Soar_iPad-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6858E4C7132BBA3D874E98550BEC592D /* Pods-Soar_iPad-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A64DBB8DF9DBE352E57915E7A5B4C2F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		A9F6D5B8DE8C4318017A423A51C69E8C /* Pods-Soar_iPad-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1560CC917E6DA00416E44823DE0DF /* Pods-Soar_iPad-dummy.m */; };
+		036EEF68828E43BCADCE47797FAD57E1 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108B4102009045A751DFF64928CEC53E /* LoadingView.xib */; };
+		04D372C653F6E69AA0B196E6473CFE8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A370987CBB4D3809D635BA0EE0F3FC /* Images.xcassets */; };
+		0BC2098A0F80C7A89EFC636CF7719D02 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB9B9CA4C01B1A99703C34955F31AB /* ImageLoader.swift */; };
+		103D6F22442C6C6D7A41BBC3D0ACF950 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80F08688E45D9A0DD31624301DFDBF /* AsyncImageView.swift */; };
+		1D737C0826F4EFBC44FDF836EBD3974D /* Pods-Soar_iPad-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6858E4C7132BBA3D874E98550BEC592D /* Pods-Soar_iPad-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ACF4E9B81D27B758C26EF910B799484 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC650B925FE7BB3AA27310E9E712FC /* DesignableLabel.swift */; };
+		30D53B7173493F4906B2D1A3843759F9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE78E11E788CD389CA4F94EF7496617 /* LoadingView.swift */; };
+		38871055D7AF0F793B0CFF4D308C3719 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E008444338E3AE64C766D9A78F0849 /* AutoTextView.swift */; };
+		5D06A6F56C01F83015396DBC68E5C81D /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA110508822D79CD52734B8ADC4C41 /* DesignableButton.swift */; };
+		69FE81246AD51B366794808FAE0E0990 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0071B413E9FDC6976F5E246BAE83EC77 /* SpringAnimation.swift */; };
+		713C3799CA174FFD9BB0E2A303A61716 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1B97F4276439C6EDEB06537E63B9E /* SpringView.swift */; };
+		73425D1134CD90F53B0B64D5FFA09205 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD139C15D788934F617285D9F2DD9C13 /* Misc.swift */; };
+		753FDF9CD5B5A6836D66A50D8A8F2C5D /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6776916939C43A8687AD456131D8B /* Spring.swift */; };
+		80F6A4AFC986180DFB50CC081B4DB7F8 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAB431D79902194918235A89A73424 /* SpringButton.swift */; };
+		884C8A7BBA31A576B3FF8B84306ABE8A /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63432036E4A03D6F0C3FCCF694EFA4C9 /* SoundPlayer.swift */; };
+		8E2E096C34778BF41F7E0041E4969509 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C825C69D574010ADE03C6A960799B2 /* SpringLabel.swift */; };
+		91DFA27B4FD8F16F53F34DDCC98CD275 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F54E8D946BB2BF3ACDFC69BEC9A666A /* AsyncButton.swift */; };
+		95053EC842C5C16974478454A39CE00A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFE8FA2720F858D0EDE6FFA017DE97 /* DesignableView.swift */; };
+		9B86450B1BB24BF966745A83F6A9002F /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0224AC722034E135A4E860DAA793E8 /* TransitionManager.swift */; };
+		AB235316805ECD247209DA9A250E6D4F /* Pods-Soar_iPad-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1560CC917E6DA00416E44823DE0DF /* Pods-Soar_iPad-dummy.m */; };
+		AEF730177B1CE7C7C5618EA7E2D5B41B /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9827E285ED203FF0BF9CF451A3091 /* TransitionZoom.swift */; };
+		B213C9B396EBBAF559765129C3DE890B /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC5053FAEB9DD8175A9CD6A6ECD90EF /* DesignableTabBarController.swift */; };
+		B26009E17A157A098E91BC8B0A7E1181 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0C8702CE93F68AE889BCCA3A1EEC5 /* UnwindSegue.swift */; };
+		B36B9FC89EC07875FF36B3E1C76BFEC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BA96A39CF438F42A118516EE3B536116 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4BCD0AA925664E0503B0583DCE4DF /* DesignableTextView.swift */; };
+		C09DABEFBFAC7FD668101FF9723ED29A /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87BD97FC7EBC37B09FD9EE3D3E76DC9 /* SpringTextField.swift */; };
+		C5813554A1CD2D04374D91B26ACE603E /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97405699634C9EC6E3822BAAD75F140A /* BlurView.swift */; };
+		CB825D9776914E72FE7C748008D2AB01 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296ECE3E64A67876C97B4BC90CCB0F86 /* SpringTextView.swift */; };
+		CBB32928F900A69817AD3CE109A71772 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A46B0DDBC072AEAA6FCC3692582DC /* DesignableTextField.swift */; };
+		D07F6B494B9E635558027D06ADCE8A0E /* Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5542552C100644820859CCE9BDD3E1D8 /* Spring-dummy.m */; };
+		D2838CE4B1C6FF01979E7DA88AEB4CB9 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E08F7403C144C566FD494271FBC89B /* DesignableImageView.swift */; };
+		D8D5DA248AFCBAC2E1BADC1FABEE5E81 /* Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC151A6CF50F4E41850FFA4C4ACE3CB /* Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBA26C391E289FFDF3E823D9276BEA79 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A177575A8533B662A8DB3131B14F6E /* KeyboardLayoutConstraint.swift */; };
+		E4BF0B636FE19B56F48E841550028D6C /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F40115846E7B49CE3EF0CA6628B9B72 /* SpringImageView.swift */; };
+		ED870FDD150CDF9E6D1DB53557FABEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A1F890BBE81F874E2192B80271FAC947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 333938A825773D0385A8FDE016C87A50;
+			remoteInfo = Spring;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0071B413E9FDC6976F5E246BAE83EC77 /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
 		01F045F4B6870E3E0A569E8B8B807CD0 /* Pods-Soar_iPad.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Soar_iPad.modulemap"; sourceTree = "<group>"; };
-		06B85C3A114C9E87BC9666EF491964CC /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		3021240F567B3789E2D53F0B5877AE09 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		02AA110508822D79CD52734B8ADC4C41 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
+		02B0C8702CE93F68AE889BCCA3A1EEC5 /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+		06E008444338E3AE64C766D9A78F0849 /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
+		08D1B97F4276439C6EDEB06537E63B9E /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
+		0BC5053FAEB9DD8175A9CD6A6ECD90EF /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
+		0F40115846E7B49CE3EF0CA6628B9B72 /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
+		108B4102009045A751DFF64928CEC53E /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
+		18145FC7BB0EDE87464E0D25EEFB35BD /* Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.xcconfig; sourceTree = "<group>"; };
+		252A44A4F1AAF9B03DC85EB3AB4BF3AA /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		296ECE3E64A67876C97B4BC90CCB0F86 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
+		2EF9827E285ED203FF0BF9CF451A3091 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
 		3159419123A10D06918E05D4FD2A8387 /* Pods-Soar_iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Soar_iPad.debug.xcconfig"; sourceTree = "<group>"; };
-		336B5FA62C43B44C37C87324932952E7 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
-		34CAF262BB71E7850041F47EF3260ED5 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		479708CD7335FD4A9F50BB7A6BD0BDA7 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		3370FEC55052CA976BCEF53C99468DC6 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		3390702AE744DBF78DF814AA61D6F1EE /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		37042E40CA48EAFA1C5CE0053B324248 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		47FFE8FA2720F858D0EDE6FFA017DE97 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
+		5542552C100644820859CCE9BDD3E1D8 /* Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spring-dummy.m"; sourceTree = "<group>"; };
+		57994309FA1C3DB76B3F3FE2A48EA0C2 /* Pods_Soar_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soar_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57C8AABD25E39B3EE5E513B67723944F /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		59A177575A8533B662A8DB3131B14F6E /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		59C825C69D574010ADE03C6A960799B2 /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
+		5B80F08688E45D9A0DD31624301DFDBF /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
+		62790917AAEB3AECF623CB63119B91D5 /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
+		63432036E4A03D6F0C3FCCF694EFA4C9 /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
 		6858E4C7132BBA3D874E98550BEC592D /* Pods-Soar_iPad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Soar_iPad-umbrella.h"; sourceTree = "<group>"; };
 		69589A283B236C1FFFF1C27E45862C30 /* Pods-Soar_iPad-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Soar_iPad-resources.sh"; sourceTree = "<group>"; };
+		74E08F7403C144C566FD494271FBC89B /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
 		7BB9CD314E3690202FCAF14686EFF58B /* Pods-Soar_iPad-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Soar_iPad-frameworks.sh"; sourceTree = "<group>"; };
 		7DA1560CC917E6DA00416E44823DE0DF /* Pods-Soar_iPad-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Soar_iPad-dummy.m"; sourceTree = "<group>"; };
+		81F8A36EA1C9C42F3C9095198AACD11E /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		86E4BCD0AA925664E0503B0583DCE4DF /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+		8F54E8D946BB2BF3ACDFC69BEC9A666A /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94E4F17500394FC485EE7C06E1FD1FB4 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		98BB44A16F79BEF584F971E949214C98 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
-		994D6B628B142B25FD2FB7FB1E7E4841 /* Pods_Soar_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soar_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97405699634C9EC6E3822BAAD75F140A /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
+		989099337CBC7FDBDDF03D08E9DD22CB /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A0224AC722034E135A4E860DAA793E8 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
+		9B75CF442F6CE183C25430BFAD814ED5 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		9BEFE523E5DE71AB6C3769443103F751 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		9DD6776916939C43A8687AD456131D8B /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
 		A0AE8822C73D80E7FC5FDC4F707A76B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A98CC47F597B04BFAF71299D5A09CF48 /* Pods-Soar_iPad-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Soar_iPad-acknowledgements.plist"; sourceTree = "<group>"; };
-		AF11577D1086BBD20AB1515F7B122A93 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		AD139C15D788934F617285D9F2DD9C13 /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
+		ADE78E11E788CD389CA4F94EF7496617 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
+		C7FAB431D79902194918235A89A73424 /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
+		C87BD97FC7EBC37B09FD9EE3D3E76DC9 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
+		CDC151A6CF50F4E41850FFA4C4ACE3CB /* Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-umbrella.h"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEFC650B925FE7BB3AA27310E9E712FC /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
+		D17EE7C047E076F181D77B3B85DB1685 /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Spring.modulemap; sourceTree = "<group>"; };
+		D58A46B0DDBC072AEAA6FCC3692582DC /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
 		DD21BABDECB490244E5D5537C2128D1C /* Pods-Soar_iPad-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Soar_iPad-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E553A7EF3FB34805207AE443F886243A /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		DFDB9B9CA4C01B1A99703C34955F31AB /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
+		E07C10966416FF225181CB9373B51395 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		E3A370987CBB4D3809D635BA0EE0F3FC /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
+		E6C774A937B47B5F527452796A85A3AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD6968AA4BA8B26DAB9A2D6F32D6438E /* Pods-Soar_iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Soar_iPad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4AC48658947FA5C366CFB8C6428B4912 /* Frameworks */ = {
+		61D809857CB1DED543D7A89D69F6CE2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64DBB8DF9DBE352E57915E7A5B4C2F2 /* Foundation.framework in Frameworks */,
+				B36B9FC89EC07875FF36B3E1C76BFEC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFAF7C7EB86C6F03F4276C0B72B8E4F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED870FDD150CDF9E6D1DB53557FABEDB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0467A09FD982402E503CCD5089004D0F /* GoogleSymbolUtilities */ = {
+		0A43EE3991DD0F64DFB933AB126C2A53 /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				DC9015FE90790A9ECFD4771F6399FB10 /* Frameworks */,
-			);
-			path = GoogleSymbolUtilities;
-			sourceTree = "<group>";
-		};
-		1E84FFDB43ED9A1940A14279ED455F5F /* GoogleInterchangeUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				8005B45B43DCF7744628D118CD5E2BA8 /* Frameworks */,
+				89ACBE262B2F0DD8BCB1CB98AF2CCB5C /* Frameworks */,
 			);
 			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
-		2ABA8F7BA215458D27153D649766A73F /* FirebaseAnalytics */ = {
+		1003DA924DAEB90459C4FBF83F08D58C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E42C875269107D80E305CC832D7B5F8 /* Frameworks */,
+				9B75CF442F6CE183C25430BFAD814ED5 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11137706DE20E0FE3EDB5EBFEB886415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				252A44A4F1AAF9B03DC85EB3AB4BF3AA /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B02C01888454B0DFA0A04DE2291430B /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				DAE309F04D67F28BF9FB33446B3961B7 /* Frameworks */,
 			);
 			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		3108171C4EC6488B5EE5860631E69C14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81F8A36EA1C9C42F3C9095198AACD11E /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3872C6568BD32AE43C3BC914F12ACDC2 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B22348C162556E8465D22615D2ADCCD0 /* Frameworks */,
+			);
+			path = FirebaseAuth;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -81,52 +191,60 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		492FA2F319B64E2C6ADCAEEC450992F0 /* GoogleUtilities */ = {
+		40D89506DB2296FDAEB4259F47CF9204 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F81F16F781C66BB5DD6F8F607AE1B7F7 /* Frameworks */,
+				E3A370987CBB4D3809D635BA0EE0F3FC /* Images.xcassets */,
+				108B4102009045A751DFF64928CEC53E /* LoadingView.xib */,
 			);
-			path = GoogleUtilities;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		4DDD284BE842D59A41AB3C93459FCA9B /* Frameworks */ = {
+		613D676726AC36FB186CC53DBC1F957F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AF11577D1086BBD20AB1515F7B122A93 /* FirebaseInstanceID.framework */,
+				E6C774A937B47B5F527452796A85A3AC /* Info.plist */,
+				D17EE7C047E076F181D77B3B85DB1685 /* Spring.modulemap */,
+				18145FC7BB0EDE87464E0D25EEFB35BD /* Spring.xcconfig */,
+				5542552C100644820859CCE9BDD3E1D8 /* Spring-dummy.m */,
+				62790917AAEB3AECF623CB63119B91D5 /* Spring-prefix.pch */,
+				CDC151A6CF50F4E41850FFA4C4ACE3CB /* Spring-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Spring";
 			sourceTree = "<group>";
 		};
-		634DAB1E26EE4AD8712B2E5E22F4F24A /* Pods */ = {
+		63C153AAA89C3881123F443B70A0ECCD /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				B4C79E06FB30F82BD4B36C61BCC20C9D /* Firebase */,
-				2ABA8F7BA215458D27153D649766A73F /* FirebaseAnalytics */,
-				CE3779316AC2B4A7F68C00AC6E471071 /* FirebaseAuth */,
-				639628D744923DBBAF0C4B2B12FB69B6 /* FirebaseInstanceID */,
-				1E84FFDB43ED9A1940A14279ED455F5F /* GoogleInterchangeUtilities */,
-				9A536A9154F031EF28F3C777726028EB /* GoogleNetworkingUtilities */,
-				0467A09FD982402E503CCD5089004D0F /* GoogleSymbolUtilities */,
-				492FA2F319B64E2C6ADCAEEC450992F0 /* GoogleUtilities */,
+				11137706DE20E0FE3EDB5EBFEB886415 /* Frameworks */,
 			);
-			name = Pods;
+			path = GoogleNetworkingUtilities;
 			sourceTree = "<group>";
 		};
-		639628D744923DBBAF0C4B2B12FB69B6 /* FirebaseInstanceID */ = {
+		642218B4281153185F3F6F63C7C8F7A6 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				336B5FA62C43B44C37C87324932952E7 /* FIRInstanceID.h */,
-				4DDD284BE842D59A41AB3C93459FCA9B /* Frameworks */,
+				37042E40CA48EAFA1C5CE0053B324248 /* FIRInstanceID.h */,
+				1003DA924DAEB90459C4FBF83F08D58C /* Frameworks */,
 			);
 			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
-		7098BE93D27ECEE6AE67C28744FC272A /* Analytics */ = {
+		673999A391D74A2DB4F571AA32D389DB /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				479708CD7335FD4A9F50BB7A6BD0BDA7 /* Firebase.h */,
+				3108171C4EC6488B5EE5860631E69C14 /* Frameworks */,
 			);
-			name = Analytics;
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		79BBC2107B11D3CF7C3828A1FEE184E0 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				CEC3EC1C8D64F9F576A3EB0788F5AE44 /* Frameworks */,
+			);
+			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -134,16 +252,16 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				634DAB1E26EE4AD8712B2E5E22F4F24A /* Pods */,
-				F7C64E4955E54B2BACE625E79D6EBC39 /* Products */,
+				A03C00BE5228E0520D7EAA12DDFF1F25 /* Pods */,
+				CB1DC0A165A610732F509C3403E9D879 /* Products */,
 				918254E4DBFD6DCF80EB44604FC79C37 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8005B45B43DCF7744628D118CD5E2BA8 /* Frameworks */ = {
+		89ACBE262B2F0DD8BCB1CB98AF2CCB5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34CAF262BB71E7850041F47EF3260ED5 /* GoogleInterchangeUtilities.framework */,
+				E07C10966416FF225181CB9373B51395 /* GoogleInterchangeUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,28 +274,72 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9A536A9154F031EF28F3C777726028EB /* GoogleNetworkingUtilities */ = {
+		9979CA93137F165A9F0094AC57682466 /* Spring */ = {
 			isa = PBXGroup;
 			children = (
-				E91858166B62F38BCCBE847265D98687 /* Frameworks */,
+				8F54E8D946BB2BF3ACDFC69BEC9A666A /* AsyncButton.swift */,
+				5B80F08688E45D9A0DD31624301DFDBF /* AsyncImageView.swift */,
+				06E008444338E3AE64C766D9A78F0849 /* AutoTextView.swift */,
+				97405699634C9EC6E3822BAAD75F140A /* BlurView.swift */,
+				02AA110508822D79CD52734B8ADC4C41 /* DesignableButton.swift */,
+				74E08F7403C144C566FD494271FBC89B /* DesignableImageView.swift */,
+				CEFC650B925FE7BB3AA27310E9E712FC /* DesignableLabel.swift */,
+				0BC5053FAEB9DD8175A9CD6A6ECD90EF /* DesignableTabBarController.swift */,
+				D58A46B0DDBC072AEAA6FCC3692582DC /* DesignableTextField.swift */,
+				86E4BCD0AA925664E0503B0583DCE4DF /* DesignableTextView.swift */,
+				47FFE8FA2720F858D0EDE6FFA017DE97 /* DesignableView.swift */,
+				DFDB9B9CA4C01B1A99703C34955F31AB /* ImageLoader.swift */,
+				59A177575A8533B662A8DB3131B14F6E /* KeyboardLayoutConstraint.swift */,
+				ADE78E11E788CD389CA4F94EF7496617 /* LoadingView.swift */,
+				AD139C15D788934F617285D9F2DD9C13 /* Misc.swift */,
+				63432036E4A03D6F0C3FCCF694EFA4C9 /* SoundPlayer.swift */,
+				9DD6776916939C43A8687AD456131D8B /* Spring.swift */,
+				0071B413E9FDC6976F5E246BAE83EC77 /* SpringAnimation.swift */,
+				C7FAB431D79902194918235A89A73424 /* SpringButton.swift */,
+				0F40115846E7B49CE3EF0CA6628B9B72 /* SpringImageView.swift */,
+				59C825C69D574010ADE03C6A960799B2 /* SpringLabel.swift */,
+				C87BD97FC7EBC37B09FD9EE3D3E76DC9 /* SpringTextField.swift */,
+				296ECE3E64A67876C97B4BC90CCB0F86 /* SpringTextView.swift */,
+				08D1B97F4276439C6EDEB06537E63B9E /* SpringView.swift */,
+				9A0224AC722034E135A4E860DAA793E8 /* TransitionManager.swift */,
+				2EF9827E285ED203FF0BF9CF451A3091 /* TransitionZoom.swift */,
+				02B0C8702CE93F68AE889BCCA3A1EEC5 /* UnwindSegue.swift */,
+				40D89506DB2296FDAEB4259F47CF9204 /* Resources */,
+				613D676726AC36FB186CC53DBC1F957F /* Support Files */,
 			);
-			path = GoogleNetworkingUtilities;
+			path = Spring;
 			sourceTree = "<group>";
 		};
-		9E42C875269107D80E305CC832D7B5F8 /* Frameworks */ = {
+		9A76B6C6843C02D9081D8964D1051B56 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				3021240F567B3789E2D53F0B5877AE09 /* FirebaseAnalytics.framework */,
+				A302C5EE7B389557046FA40144C13AAA /* Analytics */,
 			);
-			name = Frameworks;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
-		9E94CBD0C1F5E0F387F97F26ED2B4E33 /* Frameworks */ = {
+		A03C00BE5228E0520D7EAA12DDFF1F25 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E553A7EF3FB34805207AE443F886243A /* FirebaseAuth.framework */,
+				9A76B6C6843C02D9081D8964D1051B56 /* Firebase */,
+				1B02C01888454B0DFA0A04DE2291430B /* FirebaseAnalytics */,
+				3872C6568BD32AE43C3BC914F12ACDC2 /* FirebaseAuth */,
+				642218B4281153185F3F6F63C7C8F7A6 /* FirebaseInstanceID */,
+				0A43EE3991DD0F64DFB933AB126C2A53 /* GoogleInterchangeUtilities */,
+				63C153AAA89C3881123F443B70A0ECCD /* GoogleNetworkingUtilities */,
+				673999A391D74A2DB4F571AA32D389DB /* GoogleSymbolUtilities */,
+				79BBC2107B11D3CF7C3828A1FEE184E0 /* GoogleUtilities */,
+				9979CA93137F165A9F0094AC57682466 /* Spring */,
 			);
-			name = Frameworks;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A302C5EE7B389557046FA40144C13AAA /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				3390702AE744DBF78DF814AA61D6F1EE /* Firebase.h */,
+			);
+			name = Analytics;
 			sourceTree = "<group>";
 		};
 		AB08BBC7C69982F4A8EE126F5DB079DC /* Pods-Soar_iPad */ = {
@@ -198,12 +360,12 @@
 			path = "Target Support Files/Pods-Soar_iPad";
 			sourceTree = "<group>";
 		};
-		B4C79E06FB30F82BD4B36C61BCC20C9D /* Firebase */ = {
+		B22348C162556E8465D22615D2ADCCD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7098BE93D27ECEE6AE67C28744FC272A /* Analytics */,
+				9BEFE523E5DE71AB6C3769443103F751 /* FirebaseAuth.framework */,
 			);
-			path = Firebase;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -214,42 +376,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE3779316AC2B4A7F68C00AC6E471071 /* FirebaseAuth */ = {
+		CB1DC0A165A610732F509C3403E9D879 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E94CBD0C1F5E0F387F97F26ED2B4E33 /* Frameworks */,
-			);
-			path = FirebaseAuth;
-			sourceTree = "<group>";
-		};
-		DC9015FE90790A9ECFD4771F6399FB10 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				06B85C3A114C9E87BC9666EF491964CC /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E91858166B62F38BCCBE847265D98687 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				98BB44A16F79BEF584F971E949214C98 /* GoogleNetworkingUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F7C64E4955E54B2BACE625E79D6EBC39 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				994D6B628B142B25FD2FB7FB1E7E4841 /* Pods_Soar_iPad.framework */,
+				57994309FA1C3DB76B3F3FE2A48EA0C2 /* Pods_Soar_iPad.framework */,
+				989099337CBC7FDBDDF03D08E9DD22CB /* Spring.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F81F16F781C66BB5DD6F8F607AE1B7F7 /* Frameworks */ = {
+		CEC3EC1C8D64F9F576A3EB0788F5AE44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94E4F17500394FC485EE7C06E1FD1FB4 /* GoogleUtilities.framework */,
+				57C8AABD25E39B3EE5E513B67723944F /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAE309F04D67F28BF9FB33446B3961B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3370FEC55052CA976BCEF53C99468DC6 /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,32 +404,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		17D499A026E2369FF0C80ACCE5162233 /* Headers */ = {
+		60E133E8F240345150B49A05056EE5F4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3280C0D5D5BFADFEA78EBBF3FC45CA60 /* Pods-Soar_iPad-umbrella.h in Headers */,
+				1D737C0826F4EFBC44FDF836EBD3974D /* Pods-Soar_iPad-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30FAF6E88BA3AFD3D1AE2C02BA7AB2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D5DA248AFCBAC2E1BADC1FABEE5E81 /* Spring-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		FBDDB70DE3DADBFE7CC498A888146CD8 /* Pods-Soar_iPad */ = {
+		333938A825773D0385A8FDE016C87A50 /* Spring */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FFD8BFB2B968961547FBCAAF089228C /* Build configuration list for PBXNativeTarget "Pods-Soar_iPad" */;
+			buildConfigurationList = 329492E34AD67AEF49393FA558DBAE30 /* Build configuration list for PBXNativeTarget "Spring" */;
 			buildPhases = (
-				819D85F3B2CA9519D1DC658421DFA52B /* Sources */,
-				4AC48658947FA5C366CFB8C6428B4912 /* Frameworks */,
-				17D499A026E2369FF0C80ACCE5162233 /* Headers */,
+				775BE8284434F23DD3903E0BDD2F6AC6 /* Sources */,
+				FFAF7C7EB86C6F03F4276C0B72B8E4F3 /* Frameworks */,
+				37BD9C35357C572364527ECD45A7164B /* Resources */,
+				A30FAF6E88BA3AFD3D1AE2C02BA7AB2D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = Spring;
+			productName = Spring;
+			productReference = 989099337CBC7FDBDDF03D08E9DD22CB /* Spring.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4FF689EB6607BA8A35A02BAC1C747D0 /* Pods-Soar_iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6666670D97586AA0D4D06B2C378174 /* Build configuration list for PBXNativeTarget "Pods-Soar_iPad" */;
+			buildPhases = (
+				1EEBE34DA9257EB9249348BC7EC5F18D /* Sources */,
+				61D809857CB1DED543D7A89D69F6CE2F /* Frameworks */,
+				60E133E8F240345150B49A05056EE5F4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C737912789D19BE6BF41D6721BB3AE25 /* PBXTargetDependency */,
+			);
 			name = "Pods-Soar_iPad";
 			productName = "Pods-Soar_iPad";
-			productReference = 994D6B628B142B25FD2FB7FB1E7E4841 /* Pods_Soar_iPad.framework */;
+			productReference = 57994309FA1C3DB76B3F3FE2A48EA0C2 /* Pods_Soar_iPad.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -302,25 +476,82 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F7C64E4955E54B2BACE625E79D6EBC39 /* Products */;
+			productRefGroup = CB1DC0A165A610732F509C3403E9D879 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBDDB70DE3DADBFE7CC498A888146CD8 /* Pods-Soar_iPad */,
+				E4FF689EB6607BA8A35A02BAC1C747D0 /* Pods-Soar_iPad */,
+				333938A825773D0385A8FDE016C87A50 /* Spring */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		37BD9C35357C572364527ECD45A7164B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D372C653F6E69AA0B196E6473CFE8B /* Images.xcassets in Resources */,
+				036EEF68828E43BCADCE47797FAD57E1 /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		819D85F3B2CA9519D1DC658421DFA52B /* Sources */ = {
+		1EEBE34DA9257EB9249348BC7EC5F18D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F6D5B8DE8C4318017A423A51C69E8C /* Pods-Soar_iPad-dummy.m in Sources */,
+				AB235316805ECD247209DA9A250E6D4F /* Pods-Soar_iPad-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775BE8284434F23DD3903E0BDD2F6AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DFA27B4FD8F16F53F34DDCC98CD275 /* AsyncButton.swift in Sources */,
+				103D6F22442C6C6D7A41BBC3D0ACF950 /* AsyncImageView.swift in Sources */,
+				38871055D7AF0F793B0CFF4D308C3719 /* AutoTextView.swift in Sources */,
+				C5813554A1CD2D04374D91B26ACE603E /* BlurView.swift in Sources */,
+				5D06A6F56C01F83015396DBC68E5C81D /* DesignableButton.swift in Sources */,
+				D2838CE4B1C6FF01979E7DA88AEB4CB9 /* DesignableImageView.swift in Sources */,
+				2ACF4E9B81D27B758C26EF910B799484 /* DesignableLabel.swift in Sources */,
+				B213C9B396EBBAF559765129C3DE890B /* DesignableTabBarController.swift in Sources */,
+				CBB32928F900A69817AD3CE109A71772 /* DesignableTextField.swift in Sources */,
+				BA96A39CF438F42A118516EE3B536116 /* DesignableTextView.swift in Sources */,
+				95053EC842C5C16974478454A39CE00A /* DesignableView.swift in Sources */,
+				0BC2098A0F80C7A89EFC636CF7719D02 /* ImageLoader.swift in Sources */,
+				DBA26C391E289FFDF3E823D9276BEA79 /* KeyboardLayoutConstraint.swift in Sources */,
+				30D53B7173493F4906B2D1A3843759F9 /* LoadingView.swift in Sources */,
+				73425D1134CD90F53B0B64D5FFA09205 /* Misc.swift in Sources */,
+				884C8A7BBA31A576B3FF8B84306ABE8A /* SoundPlayer.swift in Sources */,
+				D07F6B494B9E635558027D06ADCE8A0E /* Spring-dummy.m in Sources */,
+				753FDF9CD5B5A6836D66A50D8A8F2C5D /* Spring.swift in Sources */,
+				69FE81246AD51B366794808FAE0E0990 /* SpringAnimation.swift in Sources */,
+				80F6A4AFC986180DFB50CC081B4DB7F8 /* SpringButton.swift in Sources */,
+				E4BF0B636FE19B56F48E841550028D6C /* SpringImageView.swift in Sources */,
+				8E2E096C34778BF41F7E0041E4969509 /* SpringLabel.swift in Sources */,
+				C09DABEFBFAC7FD668101FF9723ED29A /* SpringTextField.swift in Sources */,
+				CB825D9776914E72FE7C748008D2AB01 /* SpringTextView.swift in Sources */,
+				713C3799CA174FFD9BB0E2A303A61716 /* SpringView.swift in Sources */,
+				9B86450B1BB24BF966745A83F6A9002F /* TransitionManager.swift in Sources */,
+				AEF730177B1CE7C7C5618EA7E2D5B41B /* TransitionZoom.swift in Sources */,
+				B26009E17A157A098E91BC8B0A7E1181 /* UnwindSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C737912789D19BE6BF41D6721BB3AE25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spring;
+			target = 333938A825773D0385A8FDE016C87A50 /* Spring */;
+			targetProxy = A1F890BBE81F874E2192B80271FAC947 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		034014829C1E4434983CF3A690C12017 /* Debug */ = {
@@ -365,7 +596,37 @@
 			};
 			name = Debug;
 		};
-		4A59C50CCCA6992C7D1DD1F03CDB8745 /* Debug */ = {
+		512464A26F8588233ADE379077CD196B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18145FC7BB0EDE87464E0D25EEFB35BD /* Spring.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		615FE5C24F6E4710EFB27497C1A455F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3159419123A10D06918E05D4FD2A8387 /* Pods-Soar_iPad.debug.xcconfig */;
 			buildSettings = {
@@ -392,11 +653,41 @@
 				PRODUCT_NAME = Pods_Soar_iPad;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		61FD0CFD3437B41A8DEEBD35329D9767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18145FC7BB0EDE87464E0D25EEFB35BD /* Spring.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -436,7 +727,7 @@
 			};
 			name = Release;
 		};
-		F3EA525673C2C61324AA43FCD047947C /* Release */ = {
+		D7FEE26ABDF585DDAC974E9FCD1F6BAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD6968AA4BA8B26DAB9A2D6F32D6438E /* Pods-Soar_iPad.release.xcconfig */;
 			buildSettings = {
@@ -481,11 +772,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FFD8BFB2B968961547FBCAAF089228C /* Build configuration list for PBXNativeTarget "Pods-Soar_iPad" */ = {
+		329492E34AD67AEF49393FA558DBAE30 /* Build configuration list for PBXNativeTarget "Spring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A59C50CCCA6992C7D1DD1F03CDB8745 /* Debug */,
-				F3EA525673C2C61324AA43FCD047947C /* Release */,
+				512464A26F8588233ADE379077CD196B /* Debug */,
+				61FD0CFD3437B41A8DEEBD35329D9767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6666670D97586AA0D4D06B2C378174 /* Build configuration list for PBXNativeTarget "Pods-Soar_iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				615FE5C24F6E4710EFB27497C1A455F4 /* Debug */,
+				D7FEE26ABDF585DDAC974E9FCD1F6BAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
