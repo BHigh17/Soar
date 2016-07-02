@@ -9,9 +9,10 @@
 import UIKit
 import SafariServices
 import Firebase
+import FirebaseAuth
+ 
 
-
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     
     @IBOutlet var username: UITextField!
@@ -19,15 +20,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
-    
-    
-    
-    }
-
-
-   
+        }
 
     @IBAction func login(sender: AnyObject) {
         /*
@@ -48,6 +41,8 @@ class ViewController: UIViewController {
             user, error in
             
             if error != nil {
+                
+                
                 
                 //Incorrect add alert view
                 print("incorrect login")
